@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* Leaflet dark mode overrides */
+.leaflet-container {
+  background-color: #18181b !important; /* zinc-900 */
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background-color: #f4f4f5 !important;
+  color: #18181b !important;
+}
+
+/* Custom CSS for Toggle switches */
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #f59e0b; /* amber-500 */
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #f59e0b;
+}
+.toggle-checkbox {
+  right: 0;
+  z-index: 1;
+  border-color: #3f3f46;
+  transition: all 0.3s;
+}
+.toggle-label {
+  background-color: #3f3f46;
+  transition: all 0.3s;
+}
